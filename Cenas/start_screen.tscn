@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://yipeurtgcmm3"]
+
+[ext_resource type="Texture2D" uid="uid://dgkaysj8hrhp0" path="res://Assets Super Mario Bros/Imgs/81aac0fede86367d893f770d509e4886.png" id="1_d6251"]
+
+[node name="start_screen" type="CanvasLayer"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(579, 322)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_d6251")
