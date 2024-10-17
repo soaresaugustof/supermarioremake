@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cy0erlrwsg4yp"]
+
+[ext_resource type="Texture2D" uid="uid://cynte3knrg7rl" path="res://Assets Super Mario Bros/Sprites/ShootingFlower.png" id="1_pd8y0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fq8b5"]
+size = Vector2(16, 16)
+
+[node name="ShootingFlower" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_pd8y0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_fq8b5")
