@@ -13,8 +13,7 @@ func _ready():
 
 
 func _load_game():
-	get_tree().change_scene("res://Scenes/main.tscn")
-
+	get_tree().change_scene_to_file("res://Cenas/main.tscn")
 func _show_next_control():
 	var control = control_array.pop_front() as Control
 	if control != null:
@@ -22,3 +21,7 @@ func _show_next_control():
 	else:
 		timer.stop()
 		timer.queue_free()
+
+
+func _on_button_pressed():
+	pass # Replace with function body.
