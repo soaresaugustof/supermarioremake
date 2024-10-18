@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://ch3wg15ec4uns"]
+[gd_scene load_steps=14 format=3 uid="uid://ch3wg15ec4uns"]
 
 [ext_resource type="Texture2D" uid="uid://bh2i2pbd72n30" path="res://Assets Super Mario Bros/Sprites/GroundBlock.png" id="1_lkacn"]
 [ext_resource type="Texture2D" uid="uid://8as4lix1a8pr" path="res://Assets Super Mario Bros/Sprites/HardBlock.png" id="2_ohp27"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://db4ik5a2fbo4d" path="res://Cenas/goomba.tscn" id="5_r55k2"]
 [ext_resource type="PackedScene" uid="uid://cjonxy320oc3x" path="res://Cenas/koopa.tscn" id="6_oa63g"]
 [ext_resource type="PackedScene" uid="uid://bflecji5cjt2h" path="res://Cenas/player.tscn" id="7_dqi1q"]
+[ext_resource type="PackedScene" uid="uid://0atvbuuyi43t" path="res://Cenas/mushroom.tscn" id="8_enaab"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fqe3l"]
 texture = ExtResource("1_lkacn")
@@ -61,3 +62,6 @@ position = Vector2(191, 49)
 
 [node name="Player" parent="." instance=ExtResource("7_dqi1q")]
 position = Vector2(-198, 45)
+
+[node name="Mushroom" parent="." instance=ExtResource("8_enaab")]
+position = Vector2(56, -25)

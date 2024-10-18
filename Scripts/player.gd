@@ -85,3 +85,21 @@ func die():
 		death_tween.tween_property(self, "position", position + Vector2(0, -45), .5)
 		death_tween.chain().tween_property(self, "position", position + Vector2(0, 500), 1)
 		death_tween.tween_callback(func (): get_tree().reload_current_scene())
+	
+	elif player_mode == PlayerMode.big:
+		animated_sprite_2d.play("big_to_small") 
+	
+	elif player_mode == PlayerMode.shooting:
+		animated_sprite_2d.play("shooting_to_big")
+	
+	
+
+func grow():
+	if player_mode == PlayerMode.small:
+		animated_sprite_2d.play("small_to_big")
+
+func transform_to_shooting():
+	if player_mode == PlayerMode.small:
+		animated_sprite_2d.play("small_to_shooting")
+	elif player_mode == PlayerMode.big:
+		animated_sprite_2d.play("big_to_shooting")
